@@ -12,6 +12,36 @@ public:
     void isiData(); // Metode untuk mengisi data ke dalam array
 };
 
+// Implementasi konstruktor
+angka::angka(int i) {
+    panjang = i;
+    arr = new int[i];
+    isiData();
+}
+
+// Implementasi destruktor
+angka::~angka() {
+    cout << endl;
+    cetakData(); // Mencetak data array
+    delete[]arr;
+    cout << "Alamat Array Sudah Dilepaskan" << endl;
+}
+
+// Implementasi metode untuk mencetak data array
+void angka::cetakData() {
+    for (int i = 1; i <= panjang; i++) { // Loop melalui setiap elemen array
+        cout << i << " = " << arr[i] << endl; // Mencetak elemen array
+    }
+}
+
+// Implementasi metode untuk mengisi data ke dalam array
+void angka::isiData() {
+    for (int i = 1; i <= panjang; i++) { // Loop melalui setiap elemen array
+        cout << i << " = "; cin >> arr[i]; // Meminta pengguna untuk mengisi elemen array
+    }
+    cout << endl;
+}
+
 int main()
 {
 }
