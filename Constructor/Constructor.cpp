@@ -46,4 +46,19 @@ void Mahasiswa::cetak() {
 
 int main()
 {
+	// Membuat objek Mahasiswa dengan berbagai konstruktor
+	Mahasiswa mhs1;					// Menggunakan konstruktor default
+	Mahasiswa mhs2(20);			// Menggunakan konstruktor dengan parameter NIM
+	Mahasiswa mhs3("Regina");		// Menggunakan konstruktor dengan parameter nama
+	Mahasiswa mhs4(154, "Regina");	// Menggunakan konstruktor dengan parameter NIM dan nama
+
+	// Mencetak detail dari setiap objek
+	mhs1.cetak();
+	mhs2.cetak();
+	mhs3.cetak();
+	mhs4.cetak();
+
+	system("Pause");
+
+	return 0;
 }
