@@ -30,6 +30,27 @@ void Mahasiswa::printAll() {
 	cout << "Nama = " << nama << endl;
 	cout << endl;
 }
+
 int main()
 {
+	// Membuat objek Mahasiswa
+	Mahasiswa mhs1("Lia Kurnia");
+	Mahasiswa mhs2("Asroni");
+
+	// Mengubah nilai nim statis secara langsung
+	mhs2.nim = 20;
+
+	// Membuat lebih banyak objek Mahasiswa
+	Mahasiswa mhs3("Andi Kurniawan");
+	Mahasiswa mhs4("Joko Purbo");
+
+	// Mencetak detail dari setiap objek
+	mhs1.printAll();
+	mhs2.printAll();
+	mhs3.printAll();
+	mhs4.printAll();
+
+	system("pause");
+
+	return 0;
 }
