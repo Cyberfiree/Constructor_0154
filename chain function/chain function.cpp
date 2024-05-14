@@ -20,4 +20,7 @@ public:
 
 int main()
 {
+    // Menetapkan judul buku menjadi "Matematika" dan langsung mengambil serta mencetak judulnya
+    cout << bukunya.setJudul("Matematika").getJudul();
+    return 0;
 }
