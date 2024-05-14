@@ -44,4 +44,9 @@ void angka::isiData() {
 
 int main()
 {
+    angka belajarcpp(3); // Membuat objek 'belajarcpp' dengan panjang array 3
+    angka* ptrBelajarcpp = new angka(5); // Membuat objek dinamis 'ptrBelajarcpp' dengan panjang array 5
+    delete ptrBelajarcpp; // Melepaskan memori objek dinamis 'ptrBelajarcpp'
+
+    return 0;
 }
